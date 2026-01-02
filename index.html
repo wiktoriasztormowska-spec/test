@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kotki</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <header>
+        <h1>🐾Kotki🐾</h1>
+        <nav>
+            <button onclick="showSection('gallery')">Galeria</button>
+            <button onclick="showSection('randomCat')">Losowy kotek</button>
+            <button onclick="showSection('catFacts')">Fakty o kotach</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="gallery">
+            <h2>Galeria kotów</h2>
+
+            <div class="images">
+                <img src="images/cat1.jpg" alt="Kotek 1" class="cat">
+                <img src="images/cat2.jpg" alt="Kotek 2" class="cat">
+                <img src="images/cat3.jpg" alt="Kotek 3" class="cat">
+                <img src="images/cat4.jpg" alt="Kotek 4" class="cat">
+                <img src="images/cat5.jpg" alt="Kotek 5" class="cat">
+                <img src="images/cat6.jpg" alt="Kotek 6" class="cat">
+            </div>
+        </section>
+
+        <section id="randomCat" style="display:none;">
+            <h2>Losowy kotek</h2>
+
+            <button id="randomBtn">Pokaż kotka!</button>
+
+            <div id="randomImageContainer"></div>
+        </section>
+
+        <section id="catFacts" style="display:none;">
+            <h2>Ciekawe fakty o kotkach</h2>
+
+            <button id="factBtn">Pokaż</button>
+
+            <p id="factText"></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
